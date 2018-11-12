@@ -1,0 +1,246 @@
+#listing-contain {
+  /* height: 840px; */
+  float: left;
+  flex-grow: 1;
+  max-width: 1400px
+}
+
+#listings {
+  width: 100%;
+  padding: 15px;
+  overflow: auto;
+  min-height: 850px;
+}
+
+.search-area>input[type="text"] {
+  width: 70%;
+  background: transparent;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid #D1D5DA;
+  color: #7E8999;
+  margin-bottom: 20px;
+}
+
+.sorby-area {
+  margin-bottom: 20px;
+}
+
+.results {
+  font-size: .9rem;
+  font-weight: 300;
+  color: #7E8999;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.sort-options {
+  float: right;
+}
+
+.sort-options>.sortby {
+  font-size: 1rem;
+  font-weight: 300;
+  border: 1px solid #CEDAE8;
+  color: #787B80;
+  background: transparent;
+  padding: 6px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.view {
+  display: inline-block;
+}
+
+.view>.fas {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+.view>.fas:hover {
+  cursor: pointer;
+}
+
+.listings-results {
+  width: auto;
+}
+
+.listing-contain {
+  width: 340px;
+  height: 350px;
+  float: left;
+}
+
+.box-view {
+  width: 320px;
+}
+
+.rectangle-view {
+  width: 50%;
+  max-width: 680px;
+}
+
+.listing {
+  width: 97%;
+  box-shadow: 0px 10px 36px -10px rgba(219, 219, 219, 1);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.listing-image {
+  color: white;
+  padding: 15px;
+  /* background: url('https://www.thehousedesigners.com/images/plans/ELC/uploads/1542_Ext_10_med-ml.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: relative;
+}
+
+.address {
+  position: absolute;
+  bottom: 15px;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-shadow: 0px 1px 6px rgba(40, 40, 40, 1);
+  text-transform: capitalize;
+}
+
+.details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  padding-top: 15px;
+  background: linear-gradient(135deg, rgba(124, 36, 224, .8) 0%, rgba(177, 99, 199, 0.8) 100%);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
+.details:hover {
+  opacity: 1;
+}
+
+.user-details {
+  text-align: center;
+  vertical-align: top;
+  width: 60%;
+  margin: 0 auto 15px auto;
+}
+
+.user-name {
+  display: block;
+}
+
+.post-date {
+  display: block;
+  font-weight: 400px;
+  font-size: .9rem;
+  color: rgba(255, 255, 255, .7)
+}
+
+.floorspace>.far, .bedroom>.fas {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.bedroom>.fas {
+  margin-left: 30px;
+}
+
+.detail-fa {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.detail-fa>div {
+  display: inline-block;
+}
+
+.extra-listing {
+  width: 100%;
+  max-width: 320px;
+  margin: 0px auto;
+}
+
+.extra-listing>li {
+  display: inline-block;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.bottom-info {
+  padding: 15px;
+}
+
+.bottom-price {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 10px;
+  color: #7E8999;
+  font-weight: 500;
+}
+
+.bottom-location {
+  font-size: 1.2rem;
+  display: block;
+  color: #CDD1D8;
+}
+
+.bottom-location>.fas {
+  color: #DBE3F0;
+  margin-right: 10px;
+}
+
+#pagination {
+  height: 80px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center
+}
+
+.pages {
+  box-shadow: 0px 10px 36px -10px rgba(219, 219, 219, 1);
+  display: inline-block;
+}
+
+.pages>li {
+  padding: 20px 25px;
+  ;
+  display: inline-block;
+}
+
+.pages>li:hover {
+  background: #FF6D91;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pg-active {
+  background: #FF6D91;
+  color: white;
+  font-weight: 700;
+}
+
+.pages-blue {
+  color: #54C2FA;
+}
+
+@media only screen and (max-width: 850px) {
+  .view {
+    display: none;
+  }
+  .mobile {
+    width: 320px !important;
+  }
+}

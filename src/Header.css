@@ -1,0 +1,55 @@
+.header {
+  background: #0B002A;
+  color: white;
+  overflow: auto;
+  padding: 20px 15px;
+}
+
+.logo {
+  float: left;
+  padding-top: 6px;
+}
+
+nav {
+  float: right;
+}
+
+.nav-a {
+  color: white;
+  text-decoration: none;
+  padding: 7px 20px;
+  font-weight: 600;
+}
+
+.nav-a:hover {
+  color: #FE6C90;
+}
+
+.register-btn {
+  background: #FE6C90;
+  color: white;
+  text-align: center;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    position: relative;
+    width: 100%;
+  }
+  .logo {
+    width: 100%;
+  }
+  nav {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+  .register-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

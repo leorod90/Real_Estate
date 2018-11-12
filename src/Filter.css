@@ -1,0 +1,176 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+#filter {
+  background: #F9F8F4;
+  border: 1px solid #E8E5E3;
+  width: 30%;
+  max-width: 300px;
+  min-width: 250px;
+  min-height: 840px;
+  float: left;
+  transition: all .4s ease-in-out;
+}
+
+.filter-mobile {
+  display: none;
+  border: 1px solid #E8E5E3;
+  background: #F9F8F4;
+  width: 100%;
+  height: 80px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.fa-bars {
+  color: #51565C;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.filter>option {
+  text-transform: capitalize;
+  background: #F9F8F4;
+}
+
+.filter-contain {
+  width: 95%;
+  padding: 20px;
+}
+
+.filter-contain>h2 {
+  color: #51565C;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.filter-contain>select {
+  background: transparent;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #51565C;
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 15px;
+  color: #ACA8A9;
+  font-weight: 700;
+}
+
+.input-range {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.price {
+  margin-top: 40px;
+}
+
+.price, .sq-feet {
+  margin-bottom: 10px;
+}
+
+.input-range__slider {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 0px 32px -3px rgba(105, 105, 105, 1);
+}
+
+.input-div {
+  margin-top: 30px;
+  margin-bottom: 30px
+}
+
+.input-range__track--active {
+  background: #FE83A2;
+}
+
+.input-range__label {
+  color: #50565D;
+}
+
+.filter>input[type="text"] {
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: .4rem;
+  display: inline-block;
+  width: 45%;
+  margin-right: 2.5%;
+  margin-bottom: 1rem;
+}
+
+.extras {
+  margin-top: 50px;
+}
+
+.check-contain {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  color: #51565C;
+  font-weight: 500;
+}
+
+/* @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css); */
+
+/*** custom checkboxes ***/
+
+input[type=checkbox] {
+  display: none;
+}
+
+/* to hide the checkbox itself */
+
+input[type=checkbox]+label:before {
+  margin: -7px;
+  font-family: FontAwesome;
+  font-size: 30px;
+  color: #E5E1E0;
+  float: right;
+  font-weight: 100;
+}
+
+input[type=checkbox]+label:before {
+  content: "\f096";
+}
+
+/* unchecked icon */
+
+input[type=checkbox]+label:before {
+  letter-spacing: 10px;
+}
+
+/* space between checkbox and label */
+
+input[type=checkbox]:checked+label:before {
+  content: "\f046";
+  color: #FF6D91;
+}
+
+/* checked icon */
+
+input[type=checkbox]:checked+label:before {
+  letter-spacing: 5px;
+}
+
+/* allow space for check mark */
+
+@media only screen and (max-width: 650px) {
+  .filter-mobile {
+    display: flex;
+  }
+  #filter {
+    position: absolute;
+    transform: translate3d(-110%, 0, 0);
+    z-index: 10;
+  }
+  #filter.active {
+    transform: translate3d(0, 0, 0);
+  }
+}
